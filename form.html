@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form Sample</title>
+</head>
+<body>
+    <form action="https://formspree.io/andrewusa921@gmail.com"
+    
+    <form method="POST" action="">
+         <fieldset>
+        <!--1 type-->
+        <label for ="c-name">Client-Name:</label>
+        <input type="text" name="client-name" id="c-name"
+            required>
+        <br>
+        
+        <!--2 type-->
+        <label>Car plate number:
+        <input type="text" name="car-plate"
+            pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}"
+            placeholder="AA2123BB"
+            title="AA2123BB"
+        </label>
+        <br>
+        <!--2 type-->
+        <label>Client-Email:
+        <input type="email" name="client-email">
+        </label>
+          </fieldset>
+        
+        <fieldset>
+            Your order:
+        <label>Pizza:
+        <input type="checkbox" name="pizza">
+        </label>
+        <br>
+        <label>Beer:
+        <input type="checkbox" name="beer">
+        </label>
+        <label>
+            Number of pizzas:
+            <input type="number" name="number-pizza" value="1"
+            min="1" max="20">
+        </label>
+        </fieldset>
+        <fieldset>
+            <label>Your comment:
+            <textarea name="comment"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+        
+    </form>
+    
+</body>
+</html>
